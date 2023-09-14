@@ -126,7 +126,7 @@ src: url("../fonts/WorkSans-Regular.ttf") format("truetype");;
 }
 
 .seccionBlanca {
-    background-color: #ffffffd3;
+    background-color: #fffffff3;
     border: #000000 solid 1px;
     padding: 1em;
     margin-bottom: 1em;
