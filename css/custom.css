@@ -29,6 +29,12 @@ src: url("../fonts/WorkSans-Regular.ttf") format("truetype");;
     font-family: WorkSans-Regular !important;
 }
 
+.cards-viewport {
+    display: block;
+    margin: auto;
+    max-width: 414px;
+}
+
 /* Buttons */
 .boton-blanco {
     border: #1a1a1a solid 2px;
