@@ -30,6 +30,11 @@ src: url("../fonts/WorkSans-Regular.ttf") format("truetype");;
     font-family: WorkSans-Regular !important;
 }
 
+.font-family-announcement {
+    font-family: WorkSans-Regular !important;
+    text-transform: uppercase;
+}
+
 .cards-viewport {
     display: block;
     margin: auto;
@@ -69,6 +74,26 @@ src: url("../fonts/WorkSans-Regular.ttf") format("truetype");;
     padding: 15px 0px;
     width: 100%;
     margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    max-width: 222px;
+    text-align: center;
+    display: inline-block;
+    transition: ease-in all 0.5s;
+    font-weight: 500;
+    border-radius: 40px;
+}
+
+.boton-negro-ig {
+    border: #fff solid 2px;
+    color: #fff;
+    font-weight: 500;
+    /* margin-top: 44px; */
+    font-family: WorkSans-Regular;
+    font-size: 1em;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 15px 0px;
+    width: 100%;
     margin-bottom: 0.5em;
     max-width: 222px;
     text-align: center;
