@@ -1,87 +1,592 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
+    <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bicis y Vacas | Hotel y Restaurante</title>
-    <meta name="description" content="">
+    <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  <body>
-    <section class="page-holder position-relative d-flex justify-content-between flex-column" style="background: url(assets/background/bg_grey_blur.png)">
-      <div class="overlay"></div>
-      <!-- 
-      <div class="container position-relative z-index-20 pt-3 pb-5">
-        <ul class="list-inline text-center text-lg-end">
-          <li class="list-inline-item"><a class="social-link social-link-facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li class="list-inline-item"><a class="social-link social-link-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li class="list-inline-item"><a class="social-link social-link-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
-      -->
-      <div class="container text-center text-white position-relative z-index-20 pt-lg-5 my-5">
-        <p class="h2 font-family-announcement fw-light text-shadow angry-animate">próxima apertura</p>
-        <img class="logoPrincipal mb-4" src="assets/logo/bicis_y_vacas-06_noMB.png" alt="Bicis y Vacas">
-        <!--
-        <h1 class="text-shadow mb-4 font-family-h1">Hotel y Restaurante Bicis y Vacas</h1>
-        -->
-        <div class="cards-viewport">
-          <div class="anuncio">
-              <h2 class="anuncioTitulo">Noticias</h2>
-              <br>
-              <br>
-              <hr>
-              <p class="anuncioTexto">Fiestas del Cristo</p>
-              <p class="anuncioTextoSub">14-17 Septiembre </p>
-              <a class="boton-negro" href="programaFiestas.html">Programa de Fiestas</a>
-              <br>              <br>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Bicis y Vacas</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="favicon.ico" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
 
-              <p class="">Más información en nuestro Instragram</p>
-              <a href="https://www.instagram.com/hotelbicisyvacas">
-                <button type="button" class="btn boton-negro-ig">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
-                  </svg>
-                </button>
-              </a>
-              <hr>
-          </div>
-
-          <div class="seccionBlanca">
-              <p class="anuncioSeccionBlanca">Contacto</p>
-              <p class="anuncioTextoSub"></p>
-              <br>
-              <a class="boton-blanco" href = "mailto: bicisyvacas@gmail.com">Email</a>
-              <a class="boton-blanco" href="tel:+34 696274166">Teléfono</a>
-          </div>
-      </div>
-
-
-        <!--
-        <p class="lead mt-4">Or check out this <a href="video.html" class="text-white">landing page with a video background</a>.</p>
-        -->
-      </div>
-      <footer class="py-4 w-100 text-sm text-white z-index-20 position-relative">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 text-center text-sm-start">
-              <p>&copy; 2023 Bicis y Vacas</p>
+<body class="main-layout">
+    <div class="hero-home">
+        <div class="container hero w-container">
+            <div class="hero-content"><img src="assets/logo/bicis_y_vacas-defaultSize.png" loading="lazy" width="200" alt="" class="image-3">
+                <div class="hero-menu">
+                    <a href="#Habitaciones" class="hero-menu-link">Habitaciones - Reservas</a>
+                    <a href="#Restaurante" class="hero-menu-link">Tamba Restaurante</a>
+                    <a href="#DesayunosTop" class="hero-menu-link">Desayunos Especiales</a>
+                    <a href="#LaTerraza" class="hero-menu-link">La Terraza</a>
+                    <a href="#ElPueblo" class="hero-menu-link">El Pueblo - Experiencias</a>
+                    <a href="#Contacto" class="hero-menu-link">Contacto</a>
+                    <a href="#Ubicacin" class="hero-menu-link">Encuéntranos</a>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </div> 
+        <!--
+        <header>
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img class="logo-img-size" src="assets/logo/bicis_y_vacas-01.png" alt="Logo"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Habitaciones</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">Restaurante</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="glasses.html">Actividades</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="shop.html">Desayunos Top</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Reservas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">El Pueblo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">La Terraza</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Ubicación</a>
+                                    </li>
+
+                                    <li class="nav-item d_none sea_icon">
+                                        <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i><i class="fa fa-search" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                                <ul class="verticalnav-ul">
+                                    <li class="verticalnav-li"><a href="#Habitaciones">Habitaciones-Reservas</a></li>
+                                    <li class="verticalnav-li"><a href="#DesayunosTop">Desayunos Especiales</a></li>
+                                    <li class="verticalnav-li"><a href="#Restaurante">Tamba Restaurante</a></li>
+                                    <li class="verticalnav-li"><a href="#LaTerraza">La Terraza</a></li>
+                                    <li class="verticalnav-li"><a href="#ElPueblo">El Pueblo - Experiencias</a></li>
+                                    <li class="verticalnav-li"><a href="#Contacto">Contactáctanos</a></li>
+                                    <li class="verticalnav-li"><a href="#Ubicacin">Encuéntranos</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    -->
+    </div>
+
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+
+    <!-- end header inner -->
+    <!-- end header -->
+    <!-- banner 
+    <section class="banner_main">
+        <div id="banner1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#banner1" data-slide-to="0" class="active"></li>
+                <li data-target="#banner1" data-slide-to="1"></li>
+                <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="text-bg">
+                                <h1> <span class="blu">Welcome <br></span>To Bicis & Vacas</h1>
+                                <figure><img src="images/banner_img.png" alt="#" /></figure>
+                                <a class="read_more" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="text-bg">
+                                <h1> <span class="blu">Welcome <br></span>To Our Sunglasses</h1>
+                                <figure><img src="images/banner_img.png" alt="#" /></figure>
+                                <a class="read_more" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div class="text-bg">
+                                <h1> <span class="blu">Welcome <br></span>To Our Sunglasses</h1>
+                                <figure><img src="images/banner_img.png" alt="#" /></figure>
+                                <a class="read_more" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </a>
+        </div>
     </section>
-    <!-- JavaScript files-->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/theme.js"></script>
-    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  </body>
+     end banner -->
+
+
+    <!-- start Habitaciones section -->
+    <div class="about" id="Habitaciones">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="about_img">
+                        <figure><img src="images/about_img.png" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="titlepage">
+                        <h2>Habitaciones</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut</p>
+                    </div>
+                    <a class="read_more" href="#">Ver Habitaciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Habitaciones Section section -->
+    <!-- start Restaurante section -->
+    <div id="Restaurante" class="shop">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="shop_img">
+                        <figure><img src="images/shop_img.png" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-7 padding_right0">
+                    <div class="max_width">
+                        <div class="titlepage">
+                            <h2>Restaurante</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <a class="read_more" href="#">Ver Menú</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Restaurante section -->
+    <!-- start Desayunos Top section -->
+    <div class="glasses" id="DesayunosTop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="titlepage">
+                        <h2>Desayunos Especiales</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labor e et dolore magna aliqua. Ut enim ad minim veniam, qui
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass1.png" alt="#" /></figure>
+                        <h3><span class="blu">€</span>10</h3>
+                        <p>Plato 1</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass2.png" alt="#" /></figure>
+                        <h3><span class="blu">€</span>10</h3>
+                        <p>Plato 2</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass3.png" alt="#" /></figure>
+                        <h3><span class="blu">€</span>10</h3>
+                        <p>Plato 3</p>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass4.png" alt="#" /></figure>
+                        <h3><span class="blu">€</span>10</h3>
+                        <p>Plato 4</p>
+                    </div>
+                </div>
+                <!--
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass5.png" alt="#" /></figure>
+                        <h3><span class="blu">$</span>50</h3>
+                        <p>Sunglasses</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass6.png" alt="#" /></figure>
+                        <h3><span class="blu">$</span>50</h3>
+                        <p>Sunglasses</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass7.png" alt="#" /></figure>
+                        <h3><span class="blu">$</span>50</h3>
+                        <p>Sunglasses</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                    <div class="glasses_box">
+                        <figure><img src="images/glass8.png" alt="#" /></figure>
+                        <h3><span class="blu">$</span>50</h3>
+                        <p>Sunglasses</p>
+                    </div>
+                </div>
+                -->
+                <div class="col-md-12">
+                    <a class="read_more" href="#">Ver Desayunos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Desayunos Top section -->
+    <!-- El Pueblo section -->
+    <div id="ElPueblo" class="shop">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="shop_img">
+                        <figure><img src="images/elpueblo.png" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-7 padding_right0">
+                    <div class="max_width">
+                        <div class="titlepage">
+                            <h2>El Pueblo</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                            <a class="read_more" href="#">Ver El Pueblo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end El Pueblo section -->
+    <!-- start La Terraza section -->
+    <div class="about" id="LaTerraza">
+        <div class="container">
+            <div class="row d_flex">
+                <div class="col-md-5">
+                    <div class="about_img">
+                        <figure><img src="images/laterraza.png" alt="#" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="titlepage">
+                        <h2>La Terraza</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut</p>
+                    </div>
+                    <a class="read_more" href="#">Ver La Terraza</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end El Pueblo Section section -->
+    <!-- start Testimonios section
+    <div class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>Testimonios</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            la</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="myCarousel" class="carousel slide clients_Carousel " data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="carousel-caption ">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="clients_box">
+                                                    <figure><img src="images/our.png" alt="#" /></figure>
+                                                    <h3>Sandy Mark</h3>
+                                                    <p>It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when looking at its layout. The
+                                                        point of using Lorem Ipsum is that it has a more-or-less normal
+                                                        distribution
+                                                        of letters,It is a long established fact a more-or-less normal
+                                                        distribution of letters,</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="clients_box">
+                                                    <figure><img src="images/our.png" alt="#" /></figure>
+                                                    <h3>Sandy Mark</h3>
+                                                    <p>It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when looking at its layout. The
+                                                        point of using Lorem Ipsum is that it has a more-or-less normal
+                                                        distribution
+                                                        of letters,It is a long established fact a more-or-less normal
+                                                        distribution of letters,</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="clients_box">
+                                                    <figure><img src="images/our.png" alt="#" /></figure>
+                                                    <h3>Sandy Mark</h3>
+                                                    <p>It is a long established fact that a reader will be distracted by
+                                                        the readable content of a page when looking at its layout. The
+                                                        point of using Lorem Ipsum is that it has a more-or-less normal
+                                                        distribution
+                                                        of letters,It is a long established fact a more-or-less normal
+                                                        distribution of letters,</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                            <i class='fa fa-angle-left'></i>
+                        </a>
+                        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                            <i class='fa fa-angle-right'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     end Testimonios  section -->
+
+
+    <!-- start Ubicacion section -->
+    <div class="glasses" id="#Ubicacin">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="titlepage">
+                        <h2>Encuéntranos</h2>
+                        <div class="map-img-container mt-4">
+                            <div class="mapouter map-img">
+                                <div class="gmap_canvas">
+                                    <iframe id="gmap_canvas" class="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=La%20Pola%20de%20Gordon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <style>
+                                        .mapouter {
+                                            position: relative;
+                                            text-align: right;
+                                            height: 400px;
+                                            width: 100%;
+                                        }
+                                    </style><a href="https://www.embedgooglemap.net">google maps embed</a>
+                                    <style>
+                                        .gmap_canvas {
+                                            overflow: hidden;
+                                            background: none !important;
+                                            height: 400px;
+                                            width: 100%;
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+                        </div>
+                        <p>La Pola de Gordón</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+    </div>
+    <!-- end Ubicacion section -->
+
+    <!-- start Contacto section -->
+    <div class="glasses" id="#Contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="titlepage">
+                        <h2>Contacto</h2>
+                        <form id="request" class="main_form">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <input class="contactus" placeholder="Nombre" type="type" name="Name">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="contactus" placeholder="Teléfono" type="type" name="Phone Number">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="contactus" placeholder="Email" type="type" name="Email">
+                                </div>
+                                <div class="col-md-12">
+                                    <input class="contactusmess" placeholder="Mensaje" type="type" Message="Name">
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="send_btn">Envíar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+    </div>
+    <!-- end Contacto section -->
+    <!--  footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <ul class="location_icon">
+                            <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br>La Pola de Gordón
+                            </li>
+                            <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br> +34 1234567890</li>
+                            <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br>
+                                bicisyvacas@gmail.com </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: 42.875530,
+                    lng: -5.6818500
+                },
+            });
+
+            var image = 'images/maps-and-flags.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 42.875530,
+                    lng: -5.6818500
+                },
+                map: map,
+                icon: image
+            });
+        }
+    </script>
+    <!-- google map js -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+    <!-- end google map js -->
+</body>
+
 </html>
