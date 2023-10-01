@@ -70,6 +70,7 @@ html {
     align-items: flex-start;
     margin-top: 3rem;
     display: flex;
+    color: #000 !important;
 }
 
 .container {
@@ -81,11 +82,11 @@ html {
 .container.hero {
     height: 100%;
     /* align-items: center; */
-    display: flex
+    display: flex;
 }
 
 .hero-menu-link {
-    color: #fff;
+    color: #000;
     margin-bottom: .5rem;
     font-size: 16px;
     line-height: 2.5em !important;
@@ -624,7 +625,9 @@ button {
 
 
 /** end Our  Glasses section **/
-
+.image-3 {
+    margin-top: 2em;
+}
 
 /** Our shop section **/
 
