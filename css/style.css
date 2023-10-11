@@ -59,7 +59,7 @@ html {
 
 .hero-home {
     height: 100vh;
-    background-image: url("../assets/background/hero-home.jpg");
+    background-image: url("../assets/background/hero-home-1.jpg");
     background-position: 50%;
     background-size: cover;
     position: static;
@@ -67,7 +67,7 @@ html {
 
 @media only screen and (max-width: 800px) {
     .hero-home {
-        background-image: url("../assets/background/hero-home-mobile.JPG");
+        background-image: url("../assets/background/hero-home-1.JPG");
     }
   }
 
