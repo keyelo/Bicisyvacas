@@ -59,7 +59,7 @@ html {
 
 .hero-home {
     height: 100vh;
-    background-image: url("../assets/background/pola_col_horiz_1036_flip.jpg");
+    background-image: url("../assets/background/hero-home.jpg");
     background-position: 50%;
     background-size: cover;
     position: static;
