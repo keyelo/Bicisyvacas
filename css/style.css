@@ -69,7 +69,7 @@ html {
     .hero-home {
         background-image: url("../assets/background/hero-home-1.jpg");
     }
-  }
+}
 
 .hero-menu {
     flex-direction: column;
@@ -77,6 +77,12 @@ html {
     margin-top: 2rem;
     display: flex;
     color: #000 !important;
+}
+
+@media only screen and (min-width: 800px) {
+    .hero-menu {
+        flex-direction: row;
+        align-items: flex-end;    }
 }
 
 .container {
